@@ -1,19 +1,66 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, {
+    font-family: 'Lato', sans-serif;
+}
+
+span, p {
+   font-family: 'Lato', sans-serif;
+}
+
+html,
+body { 
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+
+}
+
+a:hover { text-decoration: none }
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+
+
+/*
 html {
 	font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    
 }
 
 h2 {
     color: #333;
-/*    text-align: center;*/
     text-transform: uppercase;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-/*    position: relative;*/
 }
+*/
 
 /*Header*/
 .header-top .container {
@@ -25,7 +72,6 @@ h2 {
 }
 .time-total-cars span {
 	font-weight: 700;
-	font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
 }
 .since {
 	background: #000;
@@ -38,7 +84,6 @@ h2 {
 	margin-left: 60px;
 	padding: 0;
 	margin: 0 0 0px 60px;
-    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
 }
 .btn_login {
 	float: left;
@@ -76,7 +121,6 @@ h2 {
 .email a span {
 	margin-left: 10px;
 	font-size: 13px;
-	font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
 }
 .leng a img {
 	width: 22px;
@@ -153,8 +197,6 @@ h2 {
     display: block;
     z-index: 510;
     padding: 14px 54px;
-     
-    font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 13px;
     color: #fcfcfc;
@@ -214,8 +256,6 @@ h2 {
 .nav .nav-column h3 {
     margin: 20px 0 10px 0;
     line-height: 18px;
-     
-    font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 14px;
     color: #372f2b;
@@ -227,8 +267,6 @@ h2 {
 .nav .nav-column li a {
     display: block;
     line-height: 26px;
-     
-    font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 13px;
     color: #888888;
@@ -240,12 +278,20 @@ h2 {
 
 /*start main area */
 
+.bg{
+    background-image: url("../images/main_vusial_bg.jpg");
+    background-repeat: repeat-x;
+}
+
+
 .main {
 	margin-top: 10px;
+
 }
 .main-area .container {
 	padding: 0px;
     max-width: 1200px;
+
 }
 .detailBox {
 	margin-top: 12px;
@@ -268,6 +314,7 @@ h2 {
     padding: 5px 0px 5px 0px;
     margin-left: -40px;
     border-bottom: 1px solid #ccc;
+    background: #fff;
 }
 .search-make dl dt, .search-price dl dt, .search-discount dl dt, .search-year dl dt{
 	text-align: center;
@@ -392,7 +439,6 @@ li.active img{
 	border-left: 2px solid #e10e0e;
 	padding: 0 0 0 12px;
 	font-size: 16px;
-	font-family: 'Roboto', sans-serif;
 	color: #4093D5;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -417,6 +463,7 @@ li.active img{
 	font-size: 12px;
     color: #ff1010;
     display: block;
+    font-weight: 700;
 }
 /* end new must populer area css */
 
@@ -448,12 +495,6 @@ li.active img{
     margin: 0 auto;
     float: none !important;
 }
-/*
-.carousel {
-    margin: 50px auto;
-    padding: 0 70px;
-}
-*/
 .carousel .item {
     color: #999;
     font-size: 14px;
@@ -475,11 +516,6 @@ li.active img{
     display: block;
     border-radius: 50%;
 }
-/*
-.carousel .testimonial {
-    padding: 30px 0 10px;
-}
-*/
 .item p {
 	padding: 10px 100px 0px 100px;
 }
@@ -491,7 +527,6 @@ li.active img{
     color: #7AA641;
 }
 .carousel .carousel-control {
-/*    width: 126px;*/
     height: 40px;
     margin-top: -20px;
     top: 50%;
@@ -506,14 +541,6 @@ li.active img{
     text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
 }
 
-/*
-.carousel-indicators li, .carousel-indicators li.active {
-    width: 10px;
-    height: 10px;
-    margin: 1px 3px;
-    border-radius: 50%;
-}
-*/
 .carousel-indicators li {   
     background: #999;
     border-color: transparent;
@@ -557,7 +584,6 @@ li.active img{
 }
 input::placeholder {
     font-size: 14px;
-    font-family: sans-serif;
 }
 .sale {
 	width: 95%;
@@ -578,19 +604,14 @@ input::placeholder {
 *************************************************************/
 .list-unstyled.clear-margins li a {
 	color: #fff;
-    font-family: 'Roboto', sans-serif;
 }
 
-@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
-@import url(http://fonts.googleapis.com/css?family=Gudea);
 .footer1 {
     background: #000;
 	padding-top: 40px;
 	padding-right: 0;
 	padding-bottom: 20px;
-	padding-left: 0;/*	border-top-width: 4px;
-	border-top-style: solid;
-	border-top-color: #003;*/
+	padding-left: 0;
     color: #fff;
 }
 
@@ -603,7 +624,6 @@ input::placeholder {
 	line-height: 1;
 	position: relative;
 	text-transform: uppercase;
-	font-family: 'Fjalla One', sans-serif;
 	margin-top: 0;
 	margin-right: 0;
 	margin-bottom: 25px;
@@ -661,10 +681,7 @@ input::placeholder {
     line-height: 20px;
     margin: 0 0 15px;
     text-transform: uppercase;
-	font-family: 'Fjalla One', sans-serif;
 }
-
-.footerp p {font-family: 'Gudea', sans-serif; }
 
 
 #social:hover {
@@ -805,9 +822,9 @@ ul.speclist{
 .speclist li {
 	list-style: none;
 	float: left;
-	padding: 0px 14px;
+	padding: 0px 12px;
 	background: #D0F0ED;
-	margin-left: 4px;
+	margin-left: 3px;
 }
 .speclist li a {
 	font-size: 12px;
@@ -940,7 +957,133 @@ ul.page-num li a:hover {
 
 
 /************************************************************
-*************************End category Page******************************
+*************************End category Page css******************************
+*************************************************************/
+
+/************************************************************
+************************* Single Page css ******************************
+*************************************************************/
+
+/*recommend Area*/
+
+.recommend-ul {
+	width: 100%
+}
+ul.recommend-ul li.recommend-li:hover {
+	background: #FFF;
+}
+.recommend-ul a img {
+	width: 90%;
+	height: 100%;
+}
+
+.car-name {
+	text-align: center;
+	margin-top: -24px;
+	font-size: 16px;
+	color: #0662ED;
+	margin-bottom: 7px;
+}
+.recommend-li span.discount {
+	padding-left: 46px;
+	background: #FFC702;
+	padding-right: 44px;
+}
+
+
+/* end recommend Area*/
+
+/*STOCK Araea*/
+
+.stock-area ul {
+	float: left;
+	margin-left: -41px;
+}
+.stock-area ul li {
+	list-style: none;
+}
+.stock-in span {
+	padding: 0px 11px;
+}
+.stock-in {
+	width: 97px;
+	background: #000;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 700;
+}
+.stock-in img {
+	height: 20px;
+}
+.stock-area ul li h4 {
+	font-weight: 700;
+}
+.stock-area ul li p {
+	line-height: 7px;
+	margin-bottom: 0px;
+	font-size: 14px;
+}
+/* end STOCK Araea*/
+
+/*socail sheare*/
+.share-post {
+	clear: both;
+	margin: -18px -1px 0px;
+	background: #F7F7F7;
+}
+.flat-social li {
+	width: auto !important;
+}
+.share-post li, .mini-share-post li {
+	float: left;
+    list-style: none;
+}
+.share-post .flat-social a {
+	color: #FFF !important;
+	text-decoration: none !important;
+    font-size: 12px;
+}
+.flat-social a {
+	padding: 5px 9px;
+	color: #FFF;
+	margin: 0 6px 2px 0;
+	display: inline-block;
+	line-height: 14px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.social-facebook {
+	background: #39599f;
+}
+.social-twitter {
+	background: #45b0e3;
+}
+.social-google-plus {
+	background: #fa0101;
+}
+.social-email {
+    background: #047909;
+}
+.fav {
+	float: right;
+	background: #ddd;
+	padding: 5px;
+	margin: 5px;
+}
+.fav a {
+	color: #fff;
+	text-transform: uppercase;
+}
+.fav a:hover {
+    text-decoration: underline;
+    transition: opacity .2s ease-out;
+}
+
+/* end socail sheare*/
+
+/************************************************************
+************************* End Single Page css ******************************
 *************************************************************/
 
 
